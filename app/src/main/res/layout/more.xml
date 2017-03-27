@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/more_tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人主页"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/more_img1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/setup" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor">
+
+        <edu.zhdata.android.zhapp.circleimageview.CircleImageView
+            android:id="@+id/more_img2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/modechange" />
+
+        <TextView
+            android:id="@+id/more_tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_img2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/person_info_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainColor"
+        app:pstsTabTextColor="@drawable/psts_tab"
+        app:pstsShouldExpand="true"
+        app:pstsIndicatorColor="@android:color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/person_info_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" ></android.support.v4.view.ViewPager>
+
+</LinearLayout>

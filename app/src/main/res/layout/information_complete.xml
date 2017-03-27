@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:id="@+id/textView2"
+        android:text="你想关注哪些话题？"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="我们将根据你关注的话题定制首页推荐内容"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_weight="0.07" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <TableLayout
+            android:id="@+id/tablelayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/tablerow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/information_complete_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/focus_button_frame"
+        android:text="完成"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

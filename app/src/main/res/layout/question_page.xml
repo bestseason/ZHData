@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/mainColor"
+        android:gravity="left">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_white"
+            android:id="@+id/question_page_img1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/question_page_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/question_page_tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="问题标题"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <cn.carbs.android.expandabletextview.library.ExpandableTextView
+            android:id="@+id/question_page_tx2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/question_page_tx1"
+            android:maxLines="30"
+            android:text="问题详细描述"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/question_page_btn1"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/question_page_tx2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/focus_button_frame"
+            android:text="关注"
+            android:textColor="@color/buttontext1"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="写回答"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_page_tx3"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/textview_frame"/>
+
+    <ListView
+        android:id="@+id/question_page_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/background"
+        android:dividerHeight="10dp" />
+</LinearLayout>

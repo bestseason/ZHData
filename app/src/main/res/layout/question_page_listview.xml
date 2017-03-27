@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_page_listview_tx1" />
+
+    <TextView
+        android:id="@+id/question_page_listview_tx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="赞同数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_page_listview_tx3"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="回答时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_page_listview_tx4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

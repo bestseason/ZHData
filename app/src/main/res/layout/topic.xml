@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:id="@+id/textView2"
+        android:text="选择你感兴趣的话题"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.07"
+        android:gravity="center"
+        android:text="无需注册，立即开始使用" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topic_choose_frame"
+                android:padding="10dp"
+                android:text="建筑"
+                android:textColor="#3b77bf" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView31"
+                android:layout_toRightOf="@+id/textView31"
+                android:background="@drawable/topic_choose_frame1"
+                android:padding="10dp"
+                android:text="计算机科学与工程"
+                android:textColor="#7c6ad6" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView32"
+                android:layout_toRightOf="@+id/textView32"
+                android:background="@drawable/topic_choose_frame2"
+                android:padding="10dp"
+                android:text="美食"
+                android:textColor="#fd6b9c" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topic_choose_frame1"
+                android:padding="10dp"
+                android:text="旅行"
+                android:textColor="#7c6ad6" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView34"
+                android:layout_toRightOf="@+id/textView34"
+                android:background="@drawable/topic_choose_frame2"
+                android:padding="10dp"
+                android:text="职业发展"
+                android:textColor="#fd6b9c" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView35"
+                android:layout_toRightOf="@+id/textView35"
+                android:background="@drawable/topic_choose_frame3"
+                android:padding="10dp"
+                android:text="游戏"
+                android:textColor="#ff7467" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topic_choose_frame2"
+                android:padding="10dp"
+                android:text="电影"
+                android:textColor="#fd6b9c" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView37"
+                android:layout_toRightOf="@+id/textView37"
+                android:background="@drawable/topic_choose_frame3"
+                android:padding="10dp"
+                android:text="经济管理"
+                android:textColor="#ff7467" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView38"
+                android:layout_toRightOf="@+id/textView38"
+                android:background="@drawable/topic_choose_frame4"
+                android:padding="10dp"
+                android:text="医学"
+                android:textColor="#FFF9AA11" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/topicbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/focus_button_frame"
+        android:onClick="click"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="选好了，进入首页->"
+        android:textColor="@color/buttontext1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+        <Button
+            android:id="@+id/topic_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/wide_button_frame"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="注册"
+            android:textColor="@color/mainColor" />
+
+        <Button
+            android:id="@+id/topic_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/wide_button_frame"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="登录"
+            android:textColor="@color/mainColor" />
+    </LinearLayout>
+
+</LinearLayout>
